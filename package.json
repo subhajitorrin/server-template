@@ -4,7 +4,7 @@
   "description": "",
   "main": "/src/server.ts",
   "scripts": {
-    "start": "pnpm exec tsc && node build/server.js",
+    "start": "pnpm prisma generate && pnpm exec tsc && node build/server.js",
     "dev": "nodemon"
   },
   "keywords": [],
